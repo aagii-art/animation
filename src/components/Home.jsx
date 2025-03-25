@@ -1,3 +1,5 @@
+import { Planet } from "./Planet";
+
 export const Home = () => {
   return (
     <div style={{ position: "relative" }}>
@@ -23,6 +25,8 @@ export const Home = () => {
           style={{ width: "100%", height: "100%" }}
         />
       </div>
+
+      <Planet width={100} height={100}  />
     </div>
   );
 };

@@ -6,21 +6,19 @@ export const Bimage = ({ src, width, height, bijgenTime }) => {
         width: width,
         position: "absolute",
         left: "50%",
-        animationName: "bijgen",
-        animationDuration: bijgenTime,
-        animationIterationCount: "infinite",
-        animationTimingFunction: "linear",
-
+        animation: `bijgen ${bijgenTime} infinite linear`
       }}
     >
-      <img
-        src={src}
-        alt=""
-        style={{
-          width: "100%",
-          height: "100%",
-        }}
-      />
+
+    <img
+      src={src}
+      alt=""
+      style={{
+        width: "100%",
+        height: "100%",
+      }}
+    />
+
     </div>
   );
 };

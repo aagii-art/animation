@@ -24,7 +24,7 @@ export const Planet = ({
         animationTimingFunction: "linear",
       }}
     >
-      <Bimage src={src} height={planetSize} bijgenTime={rotationPeriod} />
+      <Bimage src={src} height={planetSize} width={planetSize} bijgenTime={rotationPeriod} />
     </div>
   );
 };

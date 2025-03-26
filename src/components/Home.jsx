@@ -3,7 +3,7 @@ import { Planet } from "./Planet";
  const solarSystem = [
   {
     name: "Mercury",
-    orbit: "250px",
+    orbit: "150px",
     planetSize: "15px",
     orbitPeriod: "8.8s",
     rotationPeriod: "5.86s",
@@ -11,7 +11,7 @@ import { Planet } from "./Planet";
   },
   {
     name: "Venus",
-    orbit: "300px",
+    orbit: "200px",
     orbitPeriod: "22.5s",
     planetSize: "20px",
     imageUrl: "img/venus.png",
@@ -19,7 +19,7 @@ import { Planet } from "./Planet";
   },
   {
     name: "Earth",
-    orbit: "350px",
+    orbit: "300px",
     orbitPeriod: "36.5s",
     planetSize: "23px",
     imageUrl: "img/earth.png",
@@ -35,7 +35,7 @@ import { Planet } from "./Planet";
   },
   {
     name: "Jupiter",
-    orbit: "450px",
+    orbit: "550px",
     orbitPeriod: "118.6s",
     planetSize: "45px",
     imageUrl: "img/jupiter.png",
@@ -43,7 +43,7 @@ import { Planet } from "./Planet";
   },
   {
     name: "Saturn",
-    orbit: "500px",
+    orbit: "650px",
     orbitPeriod: "294.6s",
     planetSize: "40px",
     imageUrl: "img/saturn.png",
@@ -51,7 +51,7 @@ import { Planet } from "./Planet";
   },
   {
     name: "Uranus",
-    orbit: "550px",
+    orbit: "750px",
     orbitPeriod: "840s",
     planetSize: "35px",
     imageUrl: "img/uranus.png",
@@ -59,7 +59,7 @@ import { Planet } from "./Planet";
   },
   {
     name: "Neptune",
-    orbit: "650px",
+    orbit: "850px",
     orbitPeriod: "1648s",
     planetSize: "33px",
     imageUrl: "img/neptune.png",
@@ -84,8 +84,8 @@ export const Home = () => {
           transform: "translate(-50%, -50%)",
           top: "50%",
           left: "50%",
-          width: "200px",
-          height: "200px",
+          width: "100px",
+          height: "100px",
         }}
       />
 

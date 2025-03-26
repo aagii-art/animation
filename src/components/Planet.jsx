@@ -9,19 +9,16 @@ export const Planet = ({
   rotationPeriod,
 }) => {
   return (
-    <div
+    <div className="orbit"
       style={{
         border: "2px dashed white",
         borderRadius: "50%",
-        width: width,
-        height: height,
+         width,
+         height,
         position: "absolute",
         left: "50%",
         top: "50%",
-        animationName: "planet",
-        animationDuration: orbitPeriod,
-        animationIterationCount: "infinite",
-        animationTimingFunction: "linear",
+        animation: `planet ${orbitPeriod} infinite linear`
       }}
     >
       <Bimage src={src} height={planetSize} width={planetSize} bijgenTime={rotationPeriod} />

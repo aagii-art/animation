@@ -1,12 +1,13 @@
 export const Bimage = ({ src, width, height, bijgenTime }) => {
   return (
     <div
+      className="garag"
       style={{
         height: height,
         width: width,
         position: "absolute",
         left: "50%",
-        animation: `bijgen ${bijgenTime} infinite linear`
+        animation: `planet ${bijgenTime} infinite linear`
       }}
     >
 

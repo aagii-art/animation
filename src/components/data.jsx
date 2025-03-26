@@ -1,6 +1,5 @@
-import { Planet } from "./Planet";
 
- const solarSystem = [
+ export const SolarSystem = [
   {
     name: "Mercury",
     orbit: "150px",
@@ -67,40 +66,3 @@ import { Planet } from "./Planet";
   },
 ];
 
-export const Home = () => {
-  return (
-    <div style={{ position: "relative" }}>
-      <img
-        src="/img/galaxy.jpg"
-        alt=""
-        style={{ height: "100vh", width: "100vw" }}
-      />
-
-      <img
-        src="/img/sun.png"
-        alt=""
-        style={{
-          position: "absolute",
-          transform: "translate(-50%, -50%)",
-          top: "50%",
-          left: "50%",
-          width: "100px",
-          height: "100px",
-        }}
-      />
-
-      {solarSystem.map((v) => {
-        return (
-          <Planet
-            width={v.orbit}
-            height={v.orbit}
-            src={v.imageUrl}
-            planetSize={v.planetSize}
-            orbitPeriod={v.orbitPeriod}
-            rotationPeriod={v.rotationPeriod}
-          />
-        );
-      })}
-    </div>
-  );
-};

@@ -18,14 +18,13 @@ export const Planet = ({
         position: "absolute",
         left: "50%",
         top: "50%",
-        transform: "translate(-50%, -50%)",
         animationName: "planet",
         animationDuration: orbitPeriod,
         animationIterationCount: "infinite",
         animationTimingFunction: "linear",
       }}
     >
-      <Bimage src={src} height={planetSize} />
+      <Bimage src={src} height={planetSize} bijgenTime={rotationPeriod} />
     </div>
   );
 };

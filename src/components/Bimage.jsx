@@ -1,4 +1,4 @@
-export const Bimage = ({ src, width, height }) => {
+export const Bimage = ({ src, width, height, bijgenTime }) => {
   return (
     <div
       style={{
@@ -6,7 +6,11 @@ export const Bimage = ({ src, width, height }) => {
         width: width,
         position: "absolute",
         left: "50%",
-        transform: "translate(-50%, -50%)",
+        animationName: "bijgen",
+        animationDuration: bijgenTime,
+        animationIterationCount: "infinite",
+        animationTimingFunction: "linear",
+
       }}
     >
       <img

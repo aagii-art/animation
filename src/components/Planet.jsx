@@ -11,7 +11,7 @@ export const Planet = ({
   return (
     <div className="orbit"
       style={{
-        border: "1px dashed blue",
+        border: "1px dashed white",
         borderRadius: "50%",
          width,
          height,
